@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*Font
+- Family: [Inter]
+- Weights: 400, 700
+
+- Family: [Lexend Deca]
+- Weights: 400
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+.container {
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1000px;
+  border-radius: .5rem;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.container .leftSection {
+  padding: 4em;
+  width: 50%;
+}
+
+.container .leftSection h1 {
+  color: white;
+  font-family: "Inter";
+  font-size: 2em;
+}
+
+.container .leftSection h1 .insights {
+  color: #aa5cdb;
+}
+
+.container .leftSection .para {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 2rem;
+}
+
+.container .leftSection .stats {
+  margin-top: 4rem;
+  margin-right: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: rgba(255, 255, 255, 0.6);
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .leftSection .stats li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .leftSection .stats li .one {
+  font-family: "Inter";
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.container .leftSection .stats li .two {
+  margin-top: .5rem;
+  font-family: "Lexend Deca";
+  font-size: .7rem;
+}
+
+.container .rightSection {
+  width: 50%;
+}
+
+.container .rightSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 .5rem .5rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 19vh;
+  margin-left: 1vw;
+  color: white;
+  font-size: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 807px) and (max-width: 1115px) {
+  .container {
+    width: 95%;
+    margin-top: 5vh;
+  }
+  .container .stats {
+    margin-right: 0;
+  }
+  .container .stats li {
+    margin: 0;
+  }
+  .attribution {
+    margin: 0;
+    position: absolute;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 807px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .container .rightSection {
+    width: 100%;
+  }
+  .container .rightSection img {
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+  }
+  .container .leftSection {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .container .leftSection h1 {
+    font-size: 1.2rem;
+  }
+  .container .leftSection .para {
+    margin-top: 1rem;
+    padding: 0;
+    font-size: .8rem;
+  }
+  .container .leftSection .stats {
+    margin: auto;
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: .8rem;
+  }
+  .container .leftSection .stats li {
+    margin-bottom: 1rem;
+  }
+  .attribution {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
